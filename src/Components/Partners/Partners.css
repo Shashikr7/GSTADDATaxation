@@ -1,0 +1,34 @@
+.partners {
+    text-align: center;
+    padding: 40px;
+    overflow-x: hidden;
+  }
+  
+  .partners h2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .partner-item {
+    text-align: center;
+    width: 150px;
+  }
+  
+  .partner-item h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .partner-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  

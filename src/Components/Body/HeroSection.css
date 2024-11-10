@@ -1,0 +1,97 @@
+/* HeroSection.css */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcfcfc; /* Light background color */
+  padding: 50px;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.moving-text {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: floatText 2s ease-in-out infinite; /* Use floatText animation */
+}
+
+@keyframes floatText {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at original position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up slightly */
+  }
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.user-details-form {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  gap: 10px; /* Space between inputs */
+  margin-top: 20px; /* Add some space above the form */
+}
+
+.user-details-form input,
+.user-details-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Make inputs full width */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.user-details-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-details-form button:hover {
+  background-color: #333;
+}
+
+/* Hero Slider */
+.hero-slider {
+  width: 40%;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .moving-text {
+    font-size: 36px; /* Adjust font size for smaller screens */
+  }
+}

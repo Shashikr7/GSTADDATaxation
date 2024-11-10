@@ -1,0 +1,48 @@
+.subheader {
+  margin-top: 0;
+  height: 1rem;
+  /* Auto adjust height based on content */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  background-color: rgb(171, 220, 107);
+  padding-top: 0px; /* No top padding */
+  padding-bottom: 3px; /* Minimal bottom padding */
+  padding-left: 5%; /* Minimal left padding */
+  padding-right: 5%; /* Adjust padding on larger screens */
+  font-size: 14px; /* Default font size */
+  box-sizing: border-box;
+  overflow: visible;
+  position: relative;
+  z-index: 10;
+  
+}
+
+/* Responsive adjustments for medium and smaller screens */
+@media (max-width: 768px) {
+  .subheader {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items */
+    justify-content: center; /* Center horizontally */
+    padding-top: 2px; /* Adjust padding for medium screens */
+    padding-bottom: 2px;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 13px; /* Slightly smaller font size */
+  }
+}
+
+/* Mobile-specific styling */
+@media (max-width: 480px) {
+  .subheader {
+    flex-direction: column; /* Stack vertically for mobile */
+    align-items: center; /* Align to center */
+    justify-content: center; /* Center horizontally */
+    padding-top: 1px; /* Reduce padding further */
+    padding-bottom: 1px;
+    padding-left: 5%; /* Minimize padding */
+    padding-right: 5%;
+    font-size: 11px; /* Adjust font size for mobile */
+  }
+}

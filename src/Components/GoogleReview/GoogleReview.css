@@ -1,0 +1,49 @@
+.google-review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232324;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    color: white;
+  }
+  
+  .review-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .review-title {
+    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .google-logo {
+    color: #4285f4; /* Google blue */
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  .review-count {
+    font-size: 14px;
+    color: #bbbbbb;
+  }
+  
+  .review-button {
+    background-color: #808080;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review-button:hover {
+    background-color: #606060;
+  }
+  

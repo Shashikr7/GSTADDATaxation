@@ -1,0 +1,134 @@
+.footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.newsletter {
+  flex: 1;
+  max-width: 200px;
+  margin-right: 1rem;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.newsletter button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #fff;
+  color: #003366;
+  border: none;
+  cursor: pointer;
+}
+
+.app-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex: 3;
+  flex-wrap: wrap;
+}
+
+.link-section {
+  flex: 1;
+  margin: 0.5rem;
+}
+
+.link-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold; /* Bold for headings */
+}
+
+.link-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.link-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center text */
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem; /* Adjusted margin for spacing */
+  margin-right: 120px;
+}
+
+.social-media svg {
+  cursor: pointer;
+  color: #fff;
+}
+
+.social-media svg:hover {
+  color: #1976d2;
+}
+
+.footer .social-media a:hover {
+  transform: scale(1.1);
+}
+
+.footer .social-media a {
+  color: inherit; /* Use original icon colors */
+  transition: transform 0.3s;
+}
+
+.icon-whatsapp {
+  color: #25d366;
+}
+
+.icon-linkedin {
+  color: #0077b5;
+}
+
+.icon-instagram {
+  color: #e4405f;
+}
+
+.icon-twitter {
+  color: #1da1f2;
+}
+
+.icon-facebook {
+  color: #4267b2;
+}
+
+.icon-youtube {
+  color: #ff0000;
+}
+
+/* New section for "All Rights Reserved" */
+.footer-rights {
+ 
+  margin-top: 0rem;
+  font-size: 0.9rem; /* Smaller font for copyright */
+  color: #ccc; /* Lighter color for copyright text */
+}

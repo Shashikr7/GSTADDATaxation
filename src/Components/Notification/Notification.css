@@ -1,0 +1,63 @@
+/* Notification bar container */
+.notification-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #fff6d5;
+  overflow: hidden;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+/* Notification track that holds each notification in a single line */
+.notification-track {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll 40s linear infinite;
+  white-space: nowrap;
+}
+
+/* Individual notification styling */
+.notification {
+  display: flex;
+  align-items: center;
+  padding-right: 50px; /* Space between notifications */
+}
+
+/* Icon styling */
+.notification-icon {
+  color: red;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+/* Notification message styling */
+.notification-message {
+  color: #333;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .notification-message {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .notification-message {
+    font-size: 0.8rem;
+  }
+}

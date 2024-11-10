@@ -1,0 +1,81 @@
+.slider-container {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  
+  .slick-slider {
+    position: relative;
+  }
+  
+  .slick-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .slide {
+    position: relative;
+    color: white;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 400px; /* Set a fixed height for the slider */
+    object-fit: cover; /* Ensures the image scales and fits within the container */
+  }
+  
+  .slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .slide-content h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .slide-content p {
+    font-size: 1.2rem;
+    margin: 5px 0 0;
+  }
+  
+  /* Custom arrow styles */
+  .custom-arrow {
+    font-size: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .next-arrow {
+    right: 10px;
+  }
+  
+  .prev-arrow {
+    left: 10px;
+  }
+  
+  /* Optional: Adjust text size for mobile */
+  @media (max-width: 768px) {
+    .slide-content h2 {
+      font-size: 1.5rem;
+    }
+    .slide-content p {
+      font-size: 1rem;
+    }
+  }
+  
